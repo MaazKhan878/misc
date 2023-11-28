@@ -92,7 +92,7 @@ int main(){
         }
         printf("%lf",e);
     }*/
-    int main(){
+    /*int main(){
         int count=0,n=0;
         printf("Enter the number:");
         scanf("%d",&n);
@@ -110,7 +110,21 @@ int main(){
             
         }
         return 0;
-    }
+    }*/
+    #include <stdio.h>
+int main (void)
+{
+int u, v, temp;
+printf("Please type in two nonnegative integers.\n");
+scanf("%i%i" ,&u ,&v);
+while ( v != 0 ) {
+temp = u % v;
+u = v;
+v = temp;
+}
+printf ("Their greatest common divisor is %i\n", u);
+return 0;return 0;
+}
         
 
 
